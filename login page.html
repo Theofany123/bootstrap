@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickbook - Membaca Yuk</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #a0d4ff;
+      scroll-behavior: smooth;
+    }
+
+    .page-wrapper {
+      animation: fadeMoveUp 1.2s ease-out both;
+    }
+
+    @keyframes fadeMoveUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .top-banner, .bottom-banner {
+      background-color: #a0d4ff;
+      padding: 10px 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .header {
+      background-color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      transition: background-color 0.4s ease;
+    }
+
+    .form-container {
+      background-color: #a0d4ff;
+      padding: 30px;
+      border-radius: 15px;
+      margin: 30px auto;
+      max-width: 800px;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .form-label {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .email-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 2px;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #a0d4ff;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    .bg-bookshelf {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da') center/cover no-repeat;
+      padding: 30px 0;
+      overflow: hidden;
+    }
+
+    .bg-bookshelf::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+    }
+
+    .bg-bookshelf > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+      transition: transform 0.5s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="top-banner"></div>
+    <div class="header">
+      Setiap Halaman Memperluas Wawasan
+    </div>
+    <div class="bottom-banner"></div>
+
+    <div class="bg-bookshelf">
+      <img src="./gambar inti quicbook/logo buku.png" alt="Logo Quickbook" class="logo">
+
+      <div class="form-container text-center">
+        <form onsubmit="event.preventDefault(); startTransition();">
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control email-input" id="email" placeholder="masukkan alamat email :">
+          </div>
+            <a  href="beranda page.html" class="btn btn-light fw-bold rounded-pill px-4 py-2">Lanjut</a>
+         <!--<button type="submit" class="btn btn-light fw-bold rounded-pill px-4 py-2">Lanjut</button>-->
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="text-center mb-3">Ikuti Kami</div>
+      <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 3rem;">
+        <a href="https://instagram.com" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30" class="me-2">
+          <span>Instagram</span>
+        </a>
+        <a href="https://tiktok.com" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="30" class="me-2">
+          <span>TikTok</span>
+        </a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="30" class="me-2">
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:email@example.com" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Gmail" width="30" class="me-2">
+          <span>Gmail</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function startTransition() {
+      window.location.href = "beranda.html";
+    }
+  </script>
+</body>
+</html>

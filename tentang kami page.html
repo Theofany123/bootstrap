@@ -10,20 +10,31 @@
       background-color: #D9EDFF;
       font-family: 'Arial', sans-serif;
     }
-    .header {
-      background-color: #D9EDFF;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      text-align: center;
+
+    .header-wrapper {
+      background-color: #99ccff;
+      padding: 1rem 0;
     }
+
+    .header {
+      background-color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
     .header h1 {
       font-weight: bold;
       color: #000;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.8rem;
     }
+
     .navbar-custom {
       background-color: white;
       padding: 0.9rem 0;
     }
+
     .nav-link-custom {
       background-color: #B3D9FF;
       color: black;
@@ -32,13 +43,21 @@
       padding: 8px 16px;
       border-radius: 5px;
     }
+
     .nav-link-custom:hover {
       background-color: #99ccff;
       color: black;
     }
-    .logo {
-      height: 150px;
+
+    .nav-link-active {
+      background-color: #B3E6B3;
+      color: black;
     }
+
+    .logo {
+      height: 95px;
+    }
+
     .content {
       background-color: #B3D9FF;
       padding: 2rem;
@@ -46,21 +65,25 @@
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
+
     .footer {
       background-color: #99ccff;
       padding: 2rem 1rem;
       font-size: 1.2rem;
       font-weight: bold;
     }
+
     .text-box {
       background-color: #D9EDFF;
       border-radius: 10px;
       padding: 1.5rem;
     }
+
     .img-thumbnail {
       border: none;
       border-radius: 10px;
     }
+
     .book-title {
       margin-top: 0.5rem;
       font-weight: bold;
@@ -71,42 +94,38 @@
 </head>
 <body>
 
-  <div class="header">
-    <h1>Setiap Halaman Memperluas Wawasan</h1>
+  <div class="header-wrapper">
+    <div class="header">
+      <h1>Setiap Halaman Memperluas Wawasan</h1>
+    </div>
   </div>
+
   <div class="container-fluid navbar-custom">
     <div class="row align-items-center g-0">
       <div class="col-md-2 text-center">
-        <img src="gambar1.jpg" alt="Quickbook Logo" class="logo img-fluid">
+        <img src="./gambar inti quicbook/logo buku.png" alt="Quickbook Logo" class="logo img-fluid">
       </div>
       <div class="col-md-10 d-flex justify-content-end flex-wrap pe-4">
-        <a href="#" class="nav-link-custom text-decoration-none">Beranda</a>
-        <a href="#" class="nav-link-custom text-decoration-none">Tentang Kami</a>
-        <a href="#" class="nav-link-custom text-decoration-none">Project</a>
-        <a href="#" class="nav-link-custom text-decoration-none">Download</a>
-        <a href="#" class="nav-link-custom text-decoration-none">Founder</a>
+        <a href="beranda page.html" class="nav-link-custom text-decoration-none" id="home-link">Beranda</a>
+        <a href="#" class="nav-link-custom text-decoration-none" id="about-link">Tentang Kami</a>
+        <a href="project page.html" class="nav-link-custom text-decoration-none">Project</a>
+        <a href="Downloads - Shortcut.lnk" class="nav-link-custom text-decoration-none">Download</a>
+        <a href="founder 2.txt" class="nav-link-custom text-decoration-none">Founder</a>
       </div>
     </div>
   </div>
 
   <div class="container content">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="https://www.mosintuwu.com/wp-content/uploads/2017/04/Hello-Books.jpg" alt="Anak Membaca" class="img-fluid img-thumbnail">
-      </div>
+    <div class="row align-items-center">
       <div class="col-md-8">
         <div class="text-box">
           <p>
-            Di Quickbook, kami percaya bahwa membaca adalah kunci untuk membuka dunia baru.
-            Dengan perkembangan teknologi yang pesat, kami hadir untuk memudahkan setiap orang, terutama siswa dan guru, dalam mengakses berbagai buku pendidikan secara gratis.
-            Kami ingin membantu Anda menjelajahi dunia ilmu pengetahuan melalui layar gadget Anda, kapan saja dan di mana saja.
-          </p>
-          <p>
-            Seperti yang dikatakan oleh Owen Meredith, "Membacalah untuk hidup, bukan hidup untuk membaca."
-            Kami berkomitmen untuk menyediakan buku-buku yang tidak hanya memperkaya pengetahuan, tetapi juga menginspirasi pembaca untuk berkembang dan mencapai potensi terbaik mereka.
-            Bergabunglah bersama kami dalam perjalanan belajar yang tak terbatas!
+            Quickbook adalah platform yang menyediakan akses mudah dan gratis untuk membaca buku secara online. Dengan koleksi buku yang terus berkembang, Quickbook berkomitmen untuk memberikan pengalaman membaca yang nyaman dan menyenangkan bagi siapa saja yang mencari pengetahuan dan hiburan. Semua buku dapat diakses tanpa biaya, memungkinkan siapa pun untuk menjelajahi berbagai genre dan topik hanya dengan beberapa klik.
           </p>
         </div>
+      </div>
+      <div class="col-md-4 text-center mt-3 mt-md-0">
+        <img src="./gambar anak belajar/anak laptop 4.png" alt="Anak Membaca" class="img-fluid img-thumbnail">
       </div>
     </div>
   </div>
@@ -114,39 +133,38 @@
   <div class="container mb-5">
     <div class="row text-center">
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 1.jpg" alt="Foto 1" class="img-fluid rounded">
+        <img src="./kumpulan buku/buku pelajaran 1.jpg" alt="Foto 1" class="img-fluid rounded">
         <p class="book-title">Cerita Rakyat Malin Kundang</p>
       </div>
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 2.jpg" alt="Foto 2" class="img-fluid rounded">
+        <img src="./kumpulan buku/buku pelajaran 2.jpg" alt="Foto 2" class="img-fluid rounded">
         <p class="book-title">Buku RPAL SD</p>
       </div>
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 3.jpg" alt="Foto 3" class="img-fluid rounded">
+        <img src="./kumpulan buku/buku pelajaran 3.jpg" alt="Foto 3" class="img-fluid rounded">
         <p class="book-title">Buku RPSL SD</p>
       </div>
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 4.jpg" alt="Foto 4" class="img-fluid rounded">
+        <img src="./kumpulan buku/buku pelajaran 4.jpg" alt="Foto 4" class="img-fluid rounded">
         <p class="book-title">Buku PJOK kelas 6 SD</p>
       </div>
     </div>
-
     <div class="row text-center">
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 5.jpg" alt="Foto 5" class="img-fluid rounded">
+        <img src="./kumpulan buku/buku pelajaran 5.jpg" alt="Foto 5" class="img-fluid rounded">
         <p class="book-title">Buku Pendidikan Agama Islam</p>
       </div>
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 6.jpg" alt="Foto 6" class="img-fluid rounded">
+        <img src="kumpulan buku/buku pelajaran 6.jpg" alt="Foto 6" class="img-fluid rounded">
         <p class="book-title">Buku Bahasa Inggris</p>
       </div>
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 7.jpg" alt="Foto 7" class="img-fluid rounded">
+        <img src="./kumpulan buku/buku pelajaran 7.jpg" alt="Foto 7" class="img-fluid rounded">
         <p class="book-title">Buku Danau Toba</p>
       </div>
       <div class="col-md-3 col-6 mb-4">
-        <img src="buku pelajaran 8.jpg" alt="Foto 8" class="img-fluid rounded">
-        <p class="book-title">E-Buku Cerita Danau Toba</p>
+        <img src="./kumpulan buku/bawang merah.jpg" alt="Foto 8" class="img-fluid rounded">
+        <p class="book-title">Buku cerita Bawang merah</p>
       </div>
     </div>
   </div>
@@ -154,24 +172,34 @@
   <div class="footer">
     <div class="text-center mb-3">Ikuti Kami</div>
     <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 3rem;">
-
       <a href="https://instagram.com" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30" class="me-2">
         <span>Instagram</span>
       </a>
-   ]
       <a href="https://tiktok.com" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
         <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="30" class="me-2">
         <span>TikTok</span>
       </a>
-
       <a href="https://wa.me/6281234567890" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="30" class="me-2">
         <span>WhatsApp</span>
+      </a>
+      <a href="mailto:email@example.com" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Gmail" width="30" class="me-2">
+        <span>Gmail</span>
       </a>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const aboutLink = document.getElementById('about-link');
+    aboutLink.addEventListener('click', function () {
+      const navLinks = document.querySelectorAll('.nav-link-custom');
+      navLinks.forEach(link => link.classList.remove('nav-link-active'));
+      aboutLink.classList.add('nav-link-active');
+    });
+  </script>
+
 </body>
 </html>
